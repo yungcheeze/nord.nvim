@@ -209,11 +209,21 @@ theme.loadEditor = function()
 		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.nord1_gui } -- diff mode: Changed line
 		editor.DiffDelete = { fg = nord.nord11_gui, bg = nord.nord1_gui } -- diff mode: Deleted line
 		editor.DiffText = { fg = nord.nord15_gui, bg = nord.nord1_gui } -- diff mode: Changed text within a changed line
-	else
+	elseif vim.o.background == "dark" then
 		editor.DiffAdd = { bg = "#394047"} -- diff mode: Added line
 		editor.DiffChange = { bg = "#3f4147"} -- diff mode: Changed line
 		editor.DiffDelete = { bg = "#3b3945"} -- diff mode: Deleted line
 		editor.DiffText = { bg = "#4e4e4e"} -- diff mode: Changed text within a changed linea changed line
+  elseif vim.o.background == "light" then
+		editor.DiffAdd = { bg = "#dae3da"} -- diff mode: Added line
+		editor.DiffChange = { bg = "#ece6da"} -- diff mode: Changed line
+		editor.DiffDelete = { bg = "#e1ccd2"} -- diff mode: Deleted line
+		editor.DiffText = { bg = "#ecddc0"} -- diff mode: Changed text within a changed linea changed line
+  else -- should never happen but just in case
+		editor.DiffAdd = { fg = nord.nord14_gui, bg = nord.none, style = "reverse" } -- diff mode: Added line
+		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed line
+		editor.DiffDelete = { fg = nord.nord11_gui, bg = nord.none, style = "reverse" } -- diff mode: Deleted line
+		editor.DiffText = { fg = nord.nord15_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed text within a changed line
 	end
 
 	return editor
