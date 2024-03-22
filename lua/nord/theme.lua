@@ -205,10 +205,10 @@ theme.loadEditor = function()
 	end
 
 	if vim.g.nord_uniform_diff_background then
-		editor.DiffAdd = { bg = "#556259"} -- diff mode: Added line
-		editor.DiffChange = { bg = "#6d6659"} -- diff mode: Changed line
-		editor.DiffDelete = { bg = "#5e434e"} -- diff mode: Deleted line
-		editor.DiffText = { bg = "#97876a"} -- diff mode: Changed text within a changed line
+		editor.DiffAdd = { bg = "#394047"} -- diff mode: Added line
+		editor.DiffChange = { bg = "#3f4147"} -- diff mode: Changed line
+		editor.DiffDelete = { bg = "#3b3945"} -- diff mode: Deleted line
+		editor.DiffText = { bg = "#4e4e4e"} -- diff mode: Changed text within a changed line
 	else
 		editor.DiffAdd = { fg = nord.nord14_gui, bg = nord.none, style = "reverse" } -- diff mode: Added line
 		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed line
