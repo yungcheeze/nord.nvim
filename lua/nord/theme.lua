@@ -208,7 +208,7 @@ theme.loadEditor = function()
 		editor.DiffAdd = { bg = "#556259"} -- diff mode: Added line
 		editor.DiffChange = { bg = "#6d6659"} -- diff mode: Changed line
 		editor.DiffDelete = { bg = "#5e434e"} -- diff mode: Deleted line
-		editor.DiffText = { bg = "#877089"} -- diff mode: Changed text within a changed line
+		editor.DiffText = { bg = "#97876a"} -- diff mode: Changed text within a changed line
 	else
 		editor.DiffAdd = { fg = nord.nord14_gui, bg = nord.none, style = "reverse" } -- diff mode: Added line
 		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed line
